@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout/fragment_my_pokemon.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/layout/fragment_pokemon_list.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/layout/fragment_view_pager.xml" value="0.2610293034459966" />
+        <entry key="app/src/main/res/layout/list_item_pokemon.xml" value="0.24444444444444444" />
       </map>
     </option>
   </component>
