@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.25769230769230766" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1685185185185185" />
+        <entry key="app/src/main/res/drawable/my_pokemon_tab_selector.xml" value="0.25769230769230766" />
+        <entry key="app/src/main/res/drawable/pokemon_list_tab_selector.xml" value="0.25769230769230766" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_my_pokemon.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/layout/fragment_pokemon_list.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/layout/fragment_view_pager.xml" value="0.2610293034459966" />
       </map>
     </option>
   </component>
