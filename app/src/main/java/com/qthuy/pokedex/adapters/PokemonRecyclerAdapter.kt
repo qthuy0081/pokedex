@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.qthuy.pokedex.R
 import com.qthuy.pokedex.databinding.ListItemPokemonBinding
 import com.qthuy.pokedex.models.Pokemon
@@ -28,6 +29,7 @@ class PokemonRecyclerAdapter: ListAdapter<Pokemon, PokemonRecyclerAdapter.ViewHo
         fun bind(item: Pokemon) {
             binding.apply {
                 binding.pokemon = item
+                Glide.with(binding.root).load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png").into(binding.cardImage)
                 executePendingBindings()
             }
         }
