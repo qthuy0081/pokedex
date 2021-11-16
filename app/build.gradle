@@ -8,7 +8,9 @@ plugins {
 
 android {
     compileSdk rootProject.compileVersion
-
+    buildFeatures {
+        dataBinding true
+    }
     defaultConfig {
         applicationId "com.qthuy.pokedex"
         minSdk rootProject.minSdkVersion

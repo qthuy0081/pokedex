@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.recyclerview.widget.RecyclerView
+import com.qthuy.pokedex.adapters.PokemonRecyclerAdapter
 import com.qthuy.pokedex.viewmodels.PokemonListViewModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,9 +37,11 @@ class PokemonListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_pokemon_list, container, false)
-
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView_pokemon)
+        val adapter = PokemonRecyclerAdapter()
+        recyclerView.adapter = adapter
         viewModel.response.observe(viewLifecycleOwner) {
-            Log.d("ListFragment", it)
+            adapter.submitList(it)
         }
 
         return view
